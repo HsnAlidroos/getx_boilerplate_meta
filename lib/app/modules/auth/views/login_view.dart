@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controllers/login_controller.dart';
-import '../../../services/localization_service.dart';
+import '../../../services/localization/localization_service.dart';
 
 class LoginView extends GetView<LoginController> {
   const LoginView({super.key});
