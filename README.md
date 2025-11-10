@@ -14,4 +14,4 @@ How to use:
 4. Run the app: `flutter run`.
 
 Included translation files: assets/lang/en.json, assets/lang/ar.json
-# getx_boilerplate_
+# getx_boilerplate_HSN
