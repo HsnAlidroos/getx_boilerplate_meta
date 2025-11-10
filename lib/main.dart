@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'GetX Boilerplate',
       debugShowCheckedModeBanner: false,
-      initialRoute: AppPages.initial,
+      initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,
