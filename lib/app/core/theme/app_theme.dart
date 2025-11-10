@@ -6,6 +6,7 @@ class AppTheme {
     primarySwatch: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
     appBarTheme: const AppBarTheme(centerTitle: true),
+    useMaterial3: true
   );
 
   static final dark = ThemeData(
@@ -13,5 +14,6 @@ class AppTheme {
     primarySwatch: Colors.blue,
     scaffoldBackgroundColor: Colors.black,
     appBarTheme: const AppBarTheme(centerTitle: true),
+    useMaterial3: true
   );
 }
