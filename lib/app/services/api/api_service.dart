@@ -2,8 +2,7 @@ import 'package:flutter/rendering.dart' show debugPrint;
 import 'package:get/get.dart';
 import 'package:getx_boilerplate/app/core/utils/api_urls.dart';
 import 'package:getx_boilerplate/app/core/utils/http_methods.dart';
-
-
+part 'header.dart';
 
 class ApiService extends GetConnect {
   @override
@@ -24,7 +23,7 @@ class ApiService extends GetConnect {
 
       switch (method) {
         case HttpMethods.get:
-          response = await get(endpoint, query: query, headers: headers);
+          response = await get(endpoint, query: query, headers: header());
           break;
 
         case HttpMethods.post:
