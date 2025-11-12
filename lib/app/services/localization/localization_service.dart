@@ -3,13 +3,13 @@ import 'package:get/get.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
 
+import '../../core/utils/storage.dart';
+import '../../core/utils/app_keys.dart';
+
 class LocalizationService extends Translations {
   static const fallbackLocale = Locale('en', 'US');
 
-  static final locales = [
-    const Locale('en', 'US'),
-    const Locale('ar', 'SA'),
-  ];
+  static final locales = [const Locale('en', 'US'), const Locale('ar', 'SA')];
 
   static Locale get currentLocale => _currentLocale;
   static Locale _currentLocale = fallbackLocale;
@@ -24,6 +24,13 @@ class LocalizationService extends Translations {
       'en_US': await _loadJson('assets/lang/en.json'),
       'ar_SA': await _loadJson('assets/lang/ar.json'),
     };
+    // Load saved locale from storage (store only languageCode)
+    final savedLang = box.read(AppKeys.currentLocale);
+    if (savedLang != null && savedLang is String) {
+      _currentLocale = _getLocaleFromLanguage(savedLang);
+    } else {
+      _currentLocale = fallbackLocale;
+    }
   }
 
   static Future<Map<String, String>> _loadJson(String path) async {
@@ -35,6 +42,8 @@ class LocalizationService extends Translations {
   static void changeLocale(String languageCode) {
     Locale locale = _getLocaleFromLanguage(languageCode);
     _currentLocale = locale;
+    // Persist selected language and update GetX locale
+    box.write(AppKeys.currentLocale, languageCode);
     Get.updateLocale(locale);
   }
 

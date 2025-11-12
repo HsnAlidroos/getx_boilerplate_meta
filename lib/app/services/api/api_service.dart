@@ -11,7 +11,7 @@ class ApiService extends GetConnect {
     httpClient.timeout = const Duration(seconds: 15);
   }
 
-  Future<Response> requestServer({
+  Future<Response> requestApi({
     required String endpoint,
     HttpMethods method = HttpMethods.get,
     Map<String, dynamic>? body,
@@ -23,23 +23,23 @@ class ApiService extends GetConnect {
 
       switch (method) {
         case HttpMethods.get:
-          response = await get(endpoint, query: query, headers: header());
+          response = await get(endpoint, query: query, headers: getHeaders());
           break;
 
         case HttpMethods.post:
-          response = await post(endpoint, body, headers: headers, query: query);
+          response = await post(endpoint, body, headers: getHeaders(), query: query);
           break;
 
         case HttpMethods.put:
-          response = await put(endpoint, body, headers: headers, query: query);
+          response = await put(endpoint, body, headers: getHeaders(), query: query);
           break;
 
         case HttpMethods.patch:
-          response = await patch(endpoint, body, headers: headers, query: query);
+          response = await patch(endpoint, body, headers: getHeaders(), query: query);
           break;
 
         case HttpMethods.delete:
-          response = await delete(endpoint, headers: headers, query: query);
+          response = await delete(endpoint, headers: getHeaders(), query: query);
           break;
       }
 
