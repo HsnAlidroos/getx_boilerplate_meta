@@ -1,4 +1,3 @@
-
 part of 'app_pages.dart';
 
 abstract class Routes {
@@ -6,6 +5,7 @@ abstract class Routes {
   static const SPLASH = _Paths.SPLASH;
   static const HOME = _Paths.HOME;
   static const AUTH = _Paths.AUTH;
+  static const VERIFY = _Paths.VERIFY;
   static const LOGIN = _Paths.LOGIN;
   static const REGISTER = _Paths.REGISTER;
 }
