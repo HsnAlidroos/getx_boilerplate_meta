@@ -3,10 +3,10 @@ import 'package:get/get.dart';
 import 'package:getx_boilerplate/app/core/theme/app_colors.dart';
 import 'package:getx_boilerplate/app/core/widgets/custom_button.dart';
 import 'package:getx_boilerplate/app/core/widgets/custom_text_field.dart';
-import 'package:getx_boilerplate/app/modules/auth/controllers/auth_controller.dart';
+import 'package:getx_boilerplate/app/modules/auth/controllers/login_controller.dart';
 import 'package:getx_boilerplate/app/routes/app_pages.dart';
 
-class LoginView extends GetView<AuthController> {
+class LoginView extends GetView<LoginController> {
   const LoginView({Key? key}) : super(key: key);
 
   @override
@@ -43,26 +43,30 @@ class LoginView extends GetView<AuthController> {
                 prefixIcon: const Icon(Icons.email_outlined),
               ),
               const SizedBox(height: 16),
-              Obx(() => CustomTextField(
-                    hintText: 'password_hint'.tr,
-                    controller: controller.passwordController,
-                    isPassword: !controller.isPasswordVisible.value,
-                    prefixIcon: const Icon(Icons.lock_outline),
-                    suffixIcon: IconButton(
-                      icon: Icon(
-                        controller.isPasswordVisible.value
-                            ? Icons.visibility_outlined
-                            : Icons.visibility_off_outlined,
-                      ),
-                      onPressed: controller.togglePasswordVisibility,
+              GetBuilder<LoginController>(
+                builder: (controller) => CustomTextField(
+                  hintText: 'password_hint'.tr,
+                  controller: controller.passwordController,
+                  isPassword: !controller.isPasswordVisible,
+                  prefixIcon: const Icon(Icons.lock_outline),
+                  suffixIcon: IconButton(
+                    icon: Icon(
+                      controller.isPasswordVisible
+                          ? Icons.visibility_outlined
+                          : Icons.visibility_off_outlined,
                     ),
-                  )),
+                    onPressed: controller.togglePasswordVisibility,
+                  ),
+                ),
+              ),
               const SizedBox(height: 24),
-              Obx(() => CustomButton(
-                    text: 'login_button'.tr,
-                    onPressed: controller.login,
-                    isLoading: controller.isLoading.value,
-                  )),
+              GetBuilder<LoginController>(
+                builder: (controller) => CustomButton(
+                  text: 'login_button'.tr,
+                  onPressed: controller.login,
+                  isLoading: controller.isLoading,
+                ),
+              ),
               const SizedBox(height: 16),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
