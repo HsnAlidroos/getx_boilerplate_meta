@@ -5,5 +5,21 @@
   "password": "Password",
   "home": "Home",
   "welcome": "Welcome",
-  "logout": "Logout"
+  "logout": "Logout",
+  "welcome_back": "Welcome Back!",
+  "sign_in_continue": "Sign in to continue",
+  "email_hint": "Email Address",
+  "password_hint": "Password",
+  "confirm_password_hint": "Confirm Password",
+  "login_button": "Login",
+  "no_account": "Don't have an account? ",
+  "sign_up": "Sign Up",
+  "create_account": "Create Account",
+  "sign_up_started": "Sign up to get started",
+  "sign_up_button": "Sign Up",
+  "error_title": "Error",
+  "fill_all_fields": "Please fill all fields",
+  "password_mismatch": "Passwords do not match",
+  "success_title": "Success",
+  "account_created": "Account created successfully"
 }
