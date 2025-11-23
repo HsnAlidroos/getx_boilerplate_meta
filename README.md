@@ -8,7 +8,7 @@ A minimal Flutter + GetX boilerplate with:
 - AppImages, AppIcons, ApiUrls utility files
 
 ## How to use:
-1. Clone this repository Or Unzip project.
+1. Clone this repository.
 2. Run `flutter pub get`.
 3. Run `flutter create .`
 4. Run the app: `flutter run`.
