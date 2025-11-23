@@ -21,5 +21,15 @@
   "fill_all_fields": "Please fill all fields",
   "password_mismatch": "Passwords do not match",
   "success_title": "Success",
-  "account_created": "Account created successfully"
+  "account_created": "Account created successfully",
+  "email_required": "Email is required",
+  "invalid_email": "Please enter a valid email address",
+  "password_required": "Password is required",
+  "password_min_length": "Password must be at least 6 characters long",
+  "field_required": "@field is required",
+  "phone_required": "Phone number is required",
+  "invalid_phone": "Please enter a valid phone number",
+  "phone_min_length": "Phone number must be at least 8 digits",
+  "name_required": "Name is required",
+  "name_min_length": "Name must be at least 2 characters long"
 }

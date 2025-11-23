@@ -21,5 +21,15 @@
   "fill_all_fields": "يرجى ملء جميع الحقول",
   "password_mismatch": "كلمات المرور غير متطابقة",
   "success_title": "نجاح",
-  "account_created": "تم إنشاء الحساب بنجاح"
+  "account_created": "تم إنشاء الحساب بنجاح",
+  "email_required": "البريد الإلكتروني مطلوب",
+  "invalid_email": "يرجى إدخال بريد إلكتروني صحيح",
+  "password_required": "كلمة المرور مطلوبة",
+  "password_min_length": "كلمة المرور يجب أن تكون 6 أحرف على الأقل",
+  "field_required": "@field مطلوب",
+  "phone_required": "رقم الهاتف مطلوب",
+  "invalid_phone": "يرجى إدخال رقم هاتف صحيح",
+  "phone_min_length": "رقم الهاتف يجب أن يكون 8 أرقام على الأقل",
+  "name_required": "الاسم مطلوب",
+  "name_min_length": "الاسم يجب أن يكون حرفين على الأقل"
 }
