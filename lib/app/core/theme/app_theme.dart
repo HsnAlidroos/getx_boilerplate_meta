@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   static final light = ThemeData(
+    fontFamily: 'IBMPlexSansArabic',
     brightness: Brightness.light,
     primaryColor: AppColors.primary,
     scaffoldBackgroundColor: AppColors.background,
@@ -21,6 +22,7 @@ class AppTheme {
   );
 
   static final dark = ThemeData(
+    fontFamily: 'IBMPlexSansArabic',
     brightness: Brightness.dark,
     primaryColor: AppColors.primary,
     scaffoldBackgroundColor: const Color(0xFF121212),
