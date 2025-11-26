@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../core/utils/storage.dart';
-import '../../core/utils/app_keys.dart';
+import 'package:getx_boilerplate/app/core/utils/app_keys.dart';
+import 'package:getx_boilerplate/app/core/utils/storage.dart';
+
 
 class ThemeService {
   // Use AppKeys constant for storage key

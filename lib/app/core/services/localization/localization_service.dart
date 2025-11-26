@@ -1,10 +1,11 @@
 import 'dart:ui';
 import 'package:get/get.dart';
 import 'package:flutter/services.dart';
+import 'package:getx_boilerplate/app/core/utils/app_keys.dart';
 import 'dart:convert';
 
-import '../../core/utils/storage.dart';
-import '../../core/utils/app_keys.dart';
+import 'package:getx_boilerplate/app/core/utils/storage.dart';
+
 
 class LocalizationService extends Translations {
   static const fallbackLocale = Locale('en', 'US');

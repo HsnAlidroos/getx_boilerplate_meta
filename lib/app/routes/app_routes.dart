@@ -17,4 +17,5 @@ abstract class _Paths {
   static const AUTH = '/auth';
   static const LOGIN = '/auth/login';
   static const REGISTER = '/auth/register';
+  static const VERIFY = '/auth/verify';
 }

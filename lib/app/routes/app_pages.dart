@@ -1,4 +1,3 @@
-```dart
 import 'package:get/get.dart';
 
 import '../modules/auth/bindings/auth_binding.dart';
@@ -9,7 +8,6 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/auth/bindings/register_binding.dart';
 import '../modules/auth/views/register_view.dart';
-import '../modules/auth/views/verify_view.dart'; // Added VerifyView import
 import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
 
