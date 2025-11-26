@@ -1,0 +1,38 @@
+// Material
+export 'package:flutter/material.dart';
+// Flutter
+export 'package:flutter/services.dart';
+// Dart 
+export 'dart:async';
+export 'dart:convert';
+
+// GetX
+export 'package:get/get.dart';
+// GetStorage
+export 'package:get_storage/get_storage.dart';
+// GetShimmer
+export 'package:get_shimmer/get_shimmer.dart';
+
+export '../routes/app_pages.dart';
+// Core / Utils
+export 'utils/api_urls.dart';
+export 'utils/app_icons.dart';
+export 'utils/app_images.dart';
+export 'utils/app_keys.dart';
+export 'utils/constants.dart';
+export 'utils/http_methods.dart';
+export 'utils/storage.dart';
+export 'utils/validators.dart';
+// Core / Theme
+export 'theme/app_colors.dart';
+export 'theme/app_theme.dart';
+// Core / Services
+export 'services/api/api_service.dart';
+export 'services/localization/localization_service.dart';
+export 'services/theme/theme_service.dart';
+// Core / Widgets
+export 'widgets/custom_button.dart';
+export 'widgets/custom_text_field.dart';
+//Models
+export 'package:getx_boilerplate/app/data/models/request_model.dart';
+export 'package:getx_boilerplate/app/data/repositories/auth/auth_repo.dart';

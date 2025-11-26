@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:getx_boilerplate/app/core/export.dart';
 import '../controllers/splash_controller.dart';
 
 class SplashView extends GetView<SplashController> {

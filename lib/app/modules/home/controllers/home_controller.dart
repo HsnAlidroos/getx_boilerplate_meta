@@ -1,4 +1,4 @@
-import 'package:get/get.dart';
+import 'package:getx_boilerplate/app/core/export.dart';
 
 class HomeController extends GetxController {
   var count = 0.obs;

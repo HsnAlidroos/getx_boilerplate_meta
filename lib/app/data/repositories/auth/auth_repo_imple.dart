@@ -1,8 +1,4 @@
-import 'package:getx_boilerplate/app/core/utils/api_urls.dart';
-import 'package:getx_boilerplate/app/core/utils/http_methods.dart';
-import 'package:getx_boilerplate/app/data/models/request_model.dart';
-import 'package:getx_boilerplate/app/data/repositories/auth/auth_repo.dart';
-
+import 'package:getx_boilerplate/app/core/export.dart';
 class AuthRepoImple extends AuthRepo {
   @override
   Future<RequestModel> login(Map<String, dynamic> body) async {

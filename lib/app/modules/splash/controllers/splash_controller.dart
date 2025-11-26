@@ -1,5 +1,4 @@
-import 'package:get/get.dart';
-import 'package:getx_boilerplate/app/routes/app_pages.dart';
+import 'package:getx_boilerplate/app/core/export.dart';
 
 class SplashController extends GetxController {
   @override

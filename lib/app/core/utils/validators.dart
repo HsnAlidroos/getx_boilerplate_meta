@@ -1,4 +1,4 @@
-import 'package:get/get.dart';
+import 'package:getx_boilerplate/app/core/export.dart';
 
 class Validators {
   static String? validateEmail(String? value) {

@@ -1,10 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:getx_boilerplate/app/core/theme/app_colors.dart';
-import 'package:getx_boilerplate/app/core/widgets/custom_button.dart';
-import 'package:getx_boilerplate/app/core/widgets/custom_text_field.dart';
-import 'package:getx_boilerplate/app/modules/auth/controllers/login_controller.dart';
-import 'package:getx_boilerplate/app/routes/app_pages.dart';
+import 'package:getx_boilerplate/app/core/export.dart';
+
+import '../controllers/login_controller.dart';
 
 class LoginView extends GetView<LoginController> {
   const LoginView({Key? key}) : super(key: key);

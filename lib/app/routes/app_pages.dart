@@ -1,5 +1,4 @@
-import 'package:get/get.dart';
-
+import 'package:getx_boilerplate/app/core/export.dart';
 import '../modules/auth/bindings/auth_binding.dart';
 import '../modules/auth/bindings/login_binding.dart';
 import '../modules/auth/views/auth_view.dart';

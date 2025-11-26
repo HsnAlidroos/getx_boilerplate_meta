@@ -1,4 +1,4 @@
-import 'package:get/get.dart';
+import 'package:getx_boilerplate/app/core/export.dart';
 import '../controllers/login_controller.dart';
 
 class LoginBinding extends Bindings {

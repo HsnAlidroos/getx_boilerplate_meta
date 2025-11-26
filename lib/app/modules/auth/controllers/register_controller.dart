@@ -1,10 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:getx_boilerplate/app/core/utils/app_keys.dart';
-import 'package:getx_boilerplate/app/core/utils/storage.dart';
+import 'package:getx_boilerplate/app/core/export.dart';
 import 'package:getx_boilerplate/app/data/models/user_model.dart';
-import 'package:getx_boilerplate/app/data/repositories/auth/auth_repo.dart';
-import 'package:getx_boilerplate/app/routes/app_pages.dart';
 
 class RegisterController extends GetxController {
   final AuthRepo _authRepo = Get.find<AuthRepo>();
