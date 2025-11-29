@@ -23,6 +23,7 @@ export 'utils/constants.dart';
 export 'utils/http_methods.dart';
 export 'utils/storage.dart';
 export 'utils/validators.dart';
+export 'utils/responsive_text.dart';
 // Core / Theme
 export 'theme/app_colors.dart';
 export 'theme/app_theme.dart';
