@@ -33,6 +33,34 @@ export 'services/theme/theme_service.dart';
 // Core / Widgets
 export 'widgets/custom_button.dart';
 export 'widgets/custom_text_field.dart';
-//Models
+
+//Data / Models
 export 'package:getx_boilerplate/app/data/models/request_model.dart';
+export 'package:getx_boilerplate/app/data/models/user_model.dart';
+
+//Data / Repositories
 export 'package:getx_boilerplate/app/data/repositories/auth/auth_repo.dart';
+
+//Modules
+//Splash
+export 'package:getx_boilerplate/app/modules/splash/bindings/splash_binding.dart';
+export 'package:getx_boilerplate/app/modules/splash/controllers/splash_controller.dart';
+export 'package:getx_boilerplate/app/modules/splash/views/splash_view.dart';
+//Auth
+export 'package:getx_boilerplate/app/modules/auth/bindings/auth_binding.dart';
+export 'package:getx_boilerplate/app/modules/auth/bindings/login_binding.dart';
+export 'package:getx_boilerplate/app/modules/auth/bindings/register_binding.dart';
+
+export 'package:getx_boilerplate/app/modules/auth/controllers/auth_controller.dart';
+export 'package:getx_boilerplate/app/modules/auth/controllers/login_controller.dart';
+export 'package:getx_boilerplate/app/modules/auth/controllers/register_controller.dart';
+
+export 'package:getx_boilerplate/app/modules/auth/views/auth_view.dart';
+export 'package:getx_boilerplate/app/modules/auth/views/login_view.dart';
+export 'package:getx_boilerplate/app/modules/auth/views/register_view.dart';
+export 'package:getx_boilerplate/app/modules/auth/views/verify_view.dart';
+
+//Home
+export 'package:getx_boilerplate/app/modules/home/bindings/home_binding.dart';
+export 'package:getx_boilerplate/app/modules/home/controllers/home_controller.dart';
+export 'package:getx_boilerplate/app/modules/home/views/home_view.dart';

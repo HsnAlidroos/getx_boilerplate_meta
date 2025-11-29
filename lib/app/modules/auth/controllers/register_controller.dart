@@ -1,5 +1,4 @@
 import 'package:getx_boilerplate/app/core/export.dart';
-import 'package:getx_boilerplate/app/data/models/user_model.dart';
 
 class RegisterController extends GetxController {
   final AuthRepo _authRepo = Get.find<AuthRepo>();

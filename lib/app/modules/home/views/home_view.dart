@@ -1,5 +1,4 @@
 import 'package:getx_boilerplate/app/core/export.dart';
-import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
   const HomeView({super.key});
@@ -10,7 +9,7 @@ class HomeView extends GetView<HomeController> {
       appBar: AppBar(title: Text('home'.tr)),
       body: Column(
         children: [
-          
+
         ],
       )
     );

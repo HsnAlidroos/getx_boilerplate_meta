@@ -1,7 +1,5 @@
 import 'package:getx_boilerplate/app/core/export.dart';
 
-import '../controllers/login_controller.dart';
-
 class LoginView extends GetView<LoginController> {
   const LoginView({Key? key}) : super(key: key);
 
