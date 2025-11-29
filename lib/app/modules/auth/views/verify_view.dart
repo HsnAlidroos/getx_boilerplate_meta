@@ -1,7 +1,7 @@
 import 'package:getx_boilerplate/app/core/export.dart';
 
 class VerifyView extends GetView {
-  const VerifyView({Key? key}) : super(key: key);
+  const VerifyView({super.key});
 
   @override
   Widget build(BuildContext context) {
