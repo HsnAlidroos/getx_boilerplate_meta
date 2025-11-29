@@ -11,7 +11,7 @@ export 'package:get/get.dart';
 // GetStorage
 export 'package:get_storage/get_storage.dart';
 // GetShimmer
-export 'package:get_shimmer/get_shimmer.dart';
+// export 'package:get_shimmer/get_shimmer.dart';
 
 export '../routes/app_pages.dart';
 // Core / Utils
