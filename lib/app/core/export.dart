@@ -34,6 +34,8 @@ export 'services/theme/theme_service.dart';
 // Core / Widgets
 export 'widgets/custom_button.dart';
 export 'widgets/custom_text_field.dart';
+// Core / bindings
+export 'package:getx_boilerplate/app/core/bindings/core_binding.dart';
 
 //Data / Models
 export 'package:getx_boilerplate/app/data/models/request_model.dart';
@@ -65,3 +67,11 @@ export 'package:getx_boilerplate/app/modules/auth/views/verify_view.dart';
 export 'package:getx_boilerplate/app/modules/home/bindings/home_binding.dart';
 export 'package:getx_boilerplate/app/modules/home/controllers/home_controller.dart';
 export 'package:getx_boilerplate/app/modules/home/views/home_view.dart';
+
+//middleware_services
+export 'package:getx_boilerplate/app/core/services/middleware_services/storage_service.dart';
+export 'package:getx_boilerplate/app/core/services/middleware_services/session_service.dart';
+
+//middleware
+export 'package:getx_boilerplate/app/core/middleware/auth_middleware.dart';
+

@@ -18,6 +18,7 @@ class AppPages {
       name: _Paths.HOME,
       page: () => const HomeView(),
       binding: HomeBinding(),
+      middlewares: [AuthMiddleware()]
     ),
     GetPage(
       name: _Paths.AUTH,

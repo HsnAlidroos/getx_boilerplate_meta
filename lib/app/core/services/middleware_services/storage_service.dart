@@ -1,10 +1,9 @@
-import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
+import 'package:getx_boilerplate/app/core/export.dart';
 
 class StorageService extends GetxService {
   static StorageService get to => Get.find();
-
-  final GetStorage _box = GetStorage();
+// استخدمت box المشترك 
+  GetStorage get _box => box;
 
   bool get isLoggedIn => _box.hasData('token');
 

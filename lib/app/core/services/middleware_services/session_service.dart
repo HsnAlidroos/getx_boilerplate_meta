@@ -1,7 +1,5 @@
-import 'dart:async';
-import 'package:get/get.dart';
-import 'package:getx_boilerplate/app/core/services/middleware_services/storage_service.dart';
-import 'package:getx_boilerplate/app/routes/app_pages.dart';
+
+import 'package:getx_boilerplate/app/core/export.dart';
 
 class SessionService extends GetxService {
   Timer? _timer;
