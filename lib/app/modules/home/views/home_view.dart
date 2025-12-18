@@ -6,12 +6,22 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('home'.tr)),
-      body: Column(
-        children: [
+      appBar: AppBar(
+        title: Text('home'.tr),
+        actions: [
+          IconButton(
+            onPressed: () {
+              StorageService.to.logout();
+              Get.offAllNamed(Routes.LOGIN);
+            },
+            icon: Icon(Icons.logout),
+          ),
+        ],
+      ),
+      body: Column(children: [
 
         ],
-      )
+      ),
     );
   }
 }

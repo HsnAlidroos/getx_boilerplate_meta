@@ -2,18 +2,16 @@ import 'package:getx_boilerplate/app/core/export.dart';
 
 class StorageService extends GetxService {
   static StorageService get to => Get.find();
-// استخدمت box المشترك 
-  GetStorage get _box => box;
 
-  bool get isLoggedIn => _box.hasData('token');
+  bool get isLoggedIn => box.hasData(AppKeys.userToken);
 
   void saveToken(String token) {
-    _box.write('token', token);
+    box.write(AppKeys.userToken, token);
   }
 
   void logout() {
-    _box.remove('token');
+    box.remove(AppKeys.userToken);
   }
 
-  String? get token => _box.read('token');
+  String? get token => box.read(AppKeys.userToken);
 }

@@ -5,7 +5,11 @@ class SplashController extends GetxController {
   void onReady() {
     super.onReady();
     Future.delayed(const Duration(seconds: 2), () {
-      Get.offAllNamed(Routes.SPLASH);
+      if (StorageService.to.isLoggedIn) {
+        Get.offAllNamed(Routes.HOME);
+      } else {
+        Get.offAllNamed(Routes.LOGIN);
+      }
     });
   }
 }

@@ -9,4 +9,3 @@ class AuthMiddleware extends GetMiddleware {
     return null;
   }
 }
-

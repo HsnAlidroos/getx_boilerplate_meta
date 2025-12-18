@@ -43,6 +43,7 @@ export 'package:getx_boilerplate/app/data/models/user_model.dart';
 
 //Data / Repositories
 export 'package:getx_boilerplate/app/data/repositories/auth/auth_repo.dart';
+export 'package:getx_boilerplate/app/data/repositories/auth/auth_repo_imple.dart';
 
 //Modules
 //Splash
