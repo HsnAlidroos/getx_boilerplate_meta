@@ -44,3 +44,11 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# You need to remove this when you want use thr boilerplate for your app
+/android/
+/ios/
+/windows/
+/web/
+/linux/
+/macos/
