@@ -31,5 +31,6 @@
   "invalid_phone": "Please enter a valid phone number",
   "phone_min_length": "Phone number must be at least 8 digits",
   "name_required": "Name is required",
-  "name_min_length": "Name must be at least 2 characters long"
+  "name_min_length": "Name must be at least 2 characters long",
+  "login_failed": "Login failed"
 }
